@@ -47,7 +47,6 @@ const CryptoTable: React.FC = () => {
             <th>Price</th>
             <th>Market Value</th>
             <th>24h Change</th>
-            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -56,8 +55,7 @@ const CryptoTable: React.FC = () => {
               <td><CryptoDetails CryptoName={crypto.symbol} /></td>
               <td><PriceText Price={crypto.price} Unit={"USDT"} /></td>
               <td><PriceText Price={crypto.marketValue} Unit={"USDT"} /></td>
-              <td><ChangeIndicator Value={crypto.change} /></td>
-              <td></td>
+              <td><ChangeIndicator Value={crypto.change} Symbol={crypto.symbol} /></td>
             </tr>
           ))}
         </tbody>

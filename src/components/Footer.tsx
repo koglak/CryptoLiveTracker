@@ -4,7 +4,7 @@ import '../styles/footer.css';
 
 function Footer() {
     return (
-        <footer className="fixed-bottom-center">
+        <footer>
             <Container fluid>
                 <Row className="text-center">
                     <span className="mb-3 mb-md-0 text-muted">©2024 Crypto Live Tracker, Inc</span>
