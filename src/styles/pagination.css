@@ -1,0 +1,22 @@
+.pagination a,
+.pagination a:visited,
+.pagination a:focus,
+.pagination a:hover,
+.pagination a:active {
+  color: black;
+}
+
+.pagination li.active a {
+  background-color: black; 
+  color: white; 
+  border-color: black
+}
+
+.pagination li a {
+  border-color: black; 
+}
+
+.pagination li.disabled a {
+  color: #ccc;
+  cursor: not-allowed;
+}
