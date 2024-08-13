@@ -11,6 +11,9 @@ The application fetches data from Binance's API to display relevant financial in
 - [Contributing](#contributing)
 - [License](#license)
 
+![Crypto Live Tracker](/src/images/live-crypto-tracker.gif)
+
+
 ## Installation
 
 1. Clone the repository.
