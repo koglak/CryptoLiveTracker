@@ -22,8 +22,6 @@ const ChangeIndicator: React.FC<ChangeIndicatorProps> = ({ Value, Symbol }) => {
     }
 
     async function fetchKlineData(symbol: string) {
-        console.log(Symbol)
-
         try {
             const response = await axios.get("https://data-api.binance.vision/api/v3/klines", {
                 params: {
