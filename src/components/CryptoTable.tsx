@@ -3,8 +3,8 @@ import axios from 'axios';
 import { CryptoData } from '../interfaces/CryptoData';
 import PriceText from './PriceText';
 import '../styles/table.css'
-import { cascadeValType } from '../utils/common';
 import ChangeIndicator from './ChangeIndicator';
+import CryptoDetails from './CryptoDetails';
 
 const CryptoTable: React.FC = () => {
   const [cryptoData, setCryptoData] = useState<CryptoData[]>([]);
@@ -19,6 +19,7 @@ const CryptoTable: React.FC = () => {
           marketValue: (parseFloat(item.lastPrice) * parseFloat(item.volume)).toFixed(2),
           change: item.priceChangePercent,
         }))
+        console.log(response.data)
         setCryptoData(formattedData);
       } catch (error) {
         console.error('Error fetching data', error);
@@ -46,7 +47,7 @@ const CryptoTable: React.FC = () => {
         <tbody>
           {cryptoData.map((crypto) => (
             <tr key={crypto.symbol} className='table-row'>
-              <td>{crypto.symbol}</td>
+              <td><CryptoDetails CryptoName={crypto.symbol}/></td>
               <td><PriceText Price={crypto.price} Unit={"USDT"} /></td>
               <td><PriceText Price={crypto.marketValue} Unit={"USDT"} /></td>
               <td><ChangeIndicator Value={crypto.change}/></td>

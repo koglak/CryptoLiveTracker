@@ -1,0 +1,37 @@
+.crypto-details {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.crypto-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #808080;
+}
+
+.crypto-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.crypto-symbol {
+    font-size: 14px;
+    font-weight: bold;
+    color: #2C2663;
+}
+
+.symbol {
+    color: #2C2663; 
+}
+
+.pair {
+    color: #A2A2A2; 
+}
+
+.crypto-name {
+    font-size: 12px;
+    color: #808080; 
+}
