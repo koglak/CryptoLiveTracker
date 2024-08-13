@@ -1,9 +1,10 @@
 import { Container, Row } from "react-bootstrap";
 import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
+import '../styles/footer.css';
 
 function Footer() {
     return (
-        <footer style={{position: "fixed", bottom: "0px", textAlign: "center"}} className="w-100 border">
+        <footer className="fixed-bottom-center">
             <Container fluid>
                 <Row className="text-center">
                     <span className="mb-3 mb-md-0 text-muted">©2024 Crypto Live Tracker, Inc</span>

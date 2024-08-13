@@ -68,7 +68,6 @@ const CryptoTable: React.FC = () => {
         total={TotalPage}
         onPageChange={setCurrentPage}
         className="pagination"
-
       />
 
     </div>

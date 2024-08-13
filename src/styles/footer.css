@@ -1,0 +1,8 @@
+.fixed-bottom-center {
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    width: 100%; /* Equivalent to className="w-100" */
+    border: 1px solid #ccc; /* Add this if you want a border, or customize as needed */
+  }
+  
