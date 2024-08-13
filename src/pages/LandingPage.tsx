@@ -1,11 +1,13 @@
+// components/LandingPage.tsx
+import React from 'react';
+import Navigation from '../components/Navigation';
 
-const LandingPage = () => {
-    return (
-        <div>
-            <h1>Landing Page</h1>
-            hello
-        </div>
-    )
+const LandingPage: React.FC = () => {
+  return (
+    <div>
+      <Navigation />
+    </div>
+  );
 }
 
 export default LandingPage;
