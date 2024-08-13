@@ -1,0 +1,47 @@
+.table-box{
+    width: 100%;
+    border: 1px solid #bbbbbb;
+    border-radius: 15px;
+    padding: 0px 12px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: separate; 
+    border-spacing: 0; 
+    margin: 15px 0px;
+  }
+  
+  .table thead th {
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+    color: #9CA3AF;
+    background-color: #F9FAFB;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-bottom: none; 
+  }
+  
+  .table tbody td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: none; /* Alt çizgiyi kaldırmak için */
+  }
+  
+  /* Sütun genişliklerini ayarlama */
+  .table thead th:nth-child(1), 
+  .table tbody td:nth-child(1) {
+    width: 35%; /* Crypto sütunu */
+  }
+  
+  .table thead th:nth-child(2), 
+  .table tbody td:nth-child(2),
+  .table thead th:nth-child(3), 
+  .table tbody td:nth-child(3),
+  .table thead th:nth-child(4), 
+  .table tbody td:nth-child(4) {
+    width: 15%; /* Diğer sütunlar */
+  }
+  

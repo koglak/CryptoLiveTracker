@@ -1,0 +1,13 @@
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c2663;
+}
+
+.unit {
+    font-size: 16px;
+    font-weight: bold;
+    color: #b8b8b8;
+    margin-left: 5px;
+    vertical-align: middle;
+}
