@@ -3,8 +3,8 @@ import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Footer() {
     return (
-        <footer>
-            <Container fluid className="border">
+        <footer style={{position: "fixed", bottom: "0px", textAlign: "center"}} className="w-100 border">
+            <Container fluid>
                 <Row className="text-center">
                     <span className="mb-3 mb-md-0 text-muted">©2024 Crypto Live Tracker, Inc</span>
                 </Row>
