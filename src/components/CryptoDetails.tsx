@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import '../styles/crypto-details.css';
 import { CryptoDetailsProps } from '../interfaces/CryptoDetails';
 
