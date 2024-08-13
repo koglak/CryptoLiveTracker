@@ -3,9 +3,7 @@ import '../styles/crypto-details.css';
 import { CryptoDetailsProps } from '../interfaces/CryptoDetails';
 
 const CryptoDetails: React.FC<CryptoDetailsProps> = ({ CryptoName }) => {
-    const [imageError, setImageError] = useState(false);
-
-    const pair_list = ["USD", "EUR", "BTC", "BNB", "ETH", "TRY", "USDT", "BRL", "USDC", "RS", "COP"]
+    const pair_list = ["USD", "EUR", "BTC", "BNB", "ETH", "TRY", "USDT", "BRL", "USDC", "RS"]
     function extractSymbolAndPair(cryptoName: string, pairList: string[]): { symbol: string, pair: string | null } {
         for (let pair of pairList) {
             if (cryptoName.endsWith(pair)) {
